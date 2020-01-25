@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+td {
+    border-color: black;
+}
+
+body.backcalendar > .container {
+    min-width: 264px;
+    position: relative;
+}
+.Background {
+    position: fixed;
+    top: -10vh;
+    left: 0px;
+    width: 100vw;
+    height: 110vh;
+    background: url(../Images/PeticionesCliente/background_1.png);
+    background-size: 100% 100%;
+    z-index: -100;
+}
+.containercalendar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    box-shadow: 5px 5px 30px black;
+    margin-top: 140px;
+    margin-bottom: 5%;
+    margin-right: 0px;
+    z-index: 400;
+}
+.row {
+    width: 100%;
+}
+#calendar {
+    max-width: 900px;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+.row .colorcalendario {
+    background: rgba(0, 0, 0, 0.4);
+}
+.row .colorcalendario .Titulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+}
+.row .colorcalendario .Titulo h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0px;
+    padding: 20px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 2px 1px black,
+                -1px -1px black,
+                1px -1px black,
+                -1px 1px black,
+                0px 1px black,
+                1px 0px black,
+                -1px 0px black,
+                0px -1px black;
+}
+nav.Green1 {
+    background: #a4ba29;
+}
+nav.Green1 .container {
+    height: 65px;
+}
+.Green2 {
+    width: 100%;
+    height: 35px;
+    background: #266157;
+}
+.navbar-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+}
+.navbar-header .LogoUEAN {
+    width: 20%;
+    height: 100%;
+}
+.navbar-header .LogoUEAN a {
+    height: 100%;
+    padding: 0px 20px;
+}
+.navbar-header .LogoUEAN a img {
+    width: auto;
+    height: 100%;
+    padding: 7px;
+}
+.navbar-header .MenuGral {
+    width: 80%;
+    height: 100%;
+}
+.navbar-header .MenuGral .MenuUl {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar-header .MenuGral .MenuUl li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    color: white;
+}
+.navbar-header .MenuGral .MenuUl li p {
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white;
+    font-size: 16px;
+}
+
+.navbar-header .MenuGral .MenuUl li a {
+    text-decoration: none;
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbar-header .MenuGral .MenuUl li a:hover {
+    color: #266157;
+}
+.LogosDroneEAN {
+    position: absolute;
+    margin-top: 155px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 500;
+}
+.LogosDroneEAN .LogoSmart {
+    height: 100%;
+    padding: 0px 20px;
+}
+.LogosDroneEAN .LogoSmart img {
+    width: auto;
+    height: 100%;
+}
+.LogosDroneEAN .LogoDrone2 {
+    height: 100%;
+    padding: 0px 50px;
+}
+.LogosDroneEAN .LogoDrone2 img {
+    width: auto;
+    height: 100%;
+}
+.row .Foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    height: 90px;
+}
+.row .Foot p {
+    font-size: 25px;
+}
+.form-group .checkbox input[type="checkbox"] {
+    display: none;
+}
+.form-group .checkbox label {
+    color: #266157;
+    padding: 3px 5px 2px 25px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.form-group .checkbox label:hover {
+    background: rgba(57, 204, 204, 0.2);
+}
+.form-group .checkbox label:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 2px solid #266157;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    border-radius: 4px;
+}
+.form-group .checkbox input[type="checkbox"]:checked + label {
+    padding: 5px 15px;
+    background: #266157;
+    border-radius: 2px;
+    color: #FFF;
+}
+.form-group .checkbox input[type="checkbox"]:checked + label:before {
+    display: none;
+}
+.modal .modal-header {
+	background: #266157;
+    color: white;
+}
+
+/*Cambio de estilos del calendario en sí*/
+.fc-day-header.fc-widget-header, .fc-axis.fc-widget-header {
+    background: #266157;
+    color: white;
+}
+.fc-unthemed .fc-divider {
+    background: #266157;
+}
+hr.fc-divider {
+    padding: 0 0 5px;
+}
+.fc-day-header.fc-widget-header {
+    padding: 7px 0px;
+}
+.fc-day {
+    background: #fff;
+}
+.fc-Domingo, .fc-past {
+    background: #ecf0f1;
+}
+div.fc-bg table tbody tr td.fc-axis.fc-widget-content {
+    background: #266157;
+    color: white;
+    padding: 10px 5px;
+}
+.fc-ltr .fc-axis {
+    text-align: center;
+    color: white;
+    padding: 7px 5px;
+}
+.fc-toolbar .fc-center h2 {
+	color: white;
+    text-shadow: 1px 2px 1px black,
+                -1px -1px black,
+                1px -1px black,
+                -1px 1px black,
+                0px 1px black,
+                1px 0px black,
+                -1px 0px black,
+                0px -1px black;
+}
+@media screen and (max-width: 760px) {
+    .LogosDroneEAN {
+	    position: relative;
+        margin-top: 110px;
+    }
+    .containercalendar {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .navbar-header {
+        margin: 0px;
+    }
+    .LogosDroneEAN .LogoDrone2 {
+        height: 100%;
+        padding: 0px 15px;
+    }
+    .LogosDroneEAN {
+        height: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    body.backcalendar .container {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    body.backcalendar .container .Green1 .container {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .navbar-header .MenuGral .MenuUl li a {
+        padding: 0px 10px;
+    }
+    .navbar-header .LogoUEAN a {
+        padding: 0px 10px;
+    }
+    .LogosDroneEAN .LogoSmart {
+        padding: 0px 10px;
+    }
+    button[class~="fc-button"] {
+        padding: 0 .4em;
+    }
+}
+@media screen and (max-width: 280px) {
+    .navbar-header .MenuGral .MenuUl li a {
+        padding: 0px 5px;
+    }
+    .navbar-header .LogoUEAN a {
+        padding: 0px 5px;
+    }
+    button[class~="fc-button"] {
+        padding: 0 .15em;
+    }
+}

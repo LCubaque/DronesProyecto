@@ -1,0 +1,158 @@
+.Container.Login {
+	background-image: url(../Images/PhotoEAN/Rodrigo-Davila-EAN-media-0996.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 0px 0px 0px 0px;
+}
+
+.Container .Contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 50px 30px 50px;
+}
+
+.error {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(209, 24, 24, 0.8);
+    color: white;
+    width: 100%;
+    padding: 7px 0px;
+    -webkit-animation: error 10s ease;
+    animation: error 10s ease;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.error p {
+    margin: 0px;
+    font-size: 20px;
+    height: 100%;
+}
+
+.Wrap.LogForm {
+    width: 40%;
+    background: rgba(38, 97, 87, 0.9);
+	padding: 100px 90px;
+    box-shadow: 5px 5px 10px;
+}
+
+.TitleLogin {
+	color: white;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.Ingreso .Box input {
+	width: 100%;
+    height: 35px;
+    font-size: 15px;
+    color: white;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.Ingreso .Box input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.Ingreso .Box input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.Ingreso .Box input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.Ingreso .Box input:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.LoginButton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	margin-top: 40px;
+}
+
+.LoginButton button {
+    width: 100%;
+    border: none;
+    background: rgba(164, 186, 41, 0.8);
+    color: white;
+    font-size: 15px;
+    padding: 10px 0px;
+    border-radius: 1px;
+    margin-bottom: 10px;
+}
+
+.HaOlvidadoClave {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.HaOlvidadoClave a {
+    text-align: center;
+	text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1020px) {
+    .Wrap.LogForm {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .Wrap.LogForm {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .Wrap.LogForm {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .Wrap.LogForm {
+        width: 100%;
+    }
+    .Container .Contain {
+        padding: 0px;
+    }
+    .Wrap.LogForm {
+        padding: 90px 60px;
+    }
+}
+@keyframes error {
+    from {
+        top: 0%;
+    } to {
+        top: -100%;
+    }
+}
+@-webkit-keyframes error {
+    from {
+        top: 0%;
+    } to {
+        top: -100%;
+    }
+}
